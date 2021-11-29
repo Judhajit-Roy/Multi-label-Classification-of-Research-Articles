@@ -32,7 +32,8 @@ For deep learning the technique used is Bidirectional LSTM.
            3       0.00      0.00      0.00         0
            4       0.00      0.00      0.00         0
            5       0.00      0.00      0.00         0
-
+           
+           
    micro avg       0.26      0.90      0.41      1540
    macro avg       0.15      0.48      0.20      1540
 weighted avg       0.50      0.90      0.61      1540
