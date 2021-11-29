@@ -41,12 +41,15 @@ Deep learning technique used is Bidirectional LSTM.
 
 # Baseline and Evaluation metric
 The Multinomial Naive Bayes model is the considered as the baseline model as it is simple to implement and has a chance of obtaining reasonable results.
-Since, it is a Multi-label classification problem the metric used Macro-F1. Macro-F1 is average of the individual F1 scores of every class. Therefore, it gives equal importance to each class.
+
 For the Multinomial Naive Bayes model the classification report is the following:
  
 ![alt text](https://github.com/Judhajit-Roy/Multi-label-Classification-of-Research-Articles/blob/main/Images/nb%20result.JPG)
 
-Thus, the baseline Macro-f1 score is 0.20.
+
+The classification report provides several metrics to analyze the performance of the model like precision, recall, F1-score and support. 
+Since, it is a Multi-label classification problem the main evaluation metric to compare the models is Macro-F1. Macro-F1 is the average of the individual F1 scores of every class. Therefore, it gives equal importance to each class.
+Thus, the baseline Macro-f1 score is **0.20**.
 
 # Results
 
@@ -88,7 +91,17 @@ For Deep Learning technique:
 
 ![alt_text](https://github.com/Judhajit-Roy/Multi-label-Classification-of-Research-Articles/blob/main/Images/bilstm%20loss%20plot.JPG)
 
-# Directions
+# Results Summary and Takeways
+
+Results show that the BiLSTM performs considerably better with a Macro-F1 score of 0.72. In the machine learning models Linear SVC is the best model with a Macro-F1 score 0.63. The BiLSTM was trained for 20 epochs. Around the epochs 9-10 it starts to get overfit on the training data based on the accuracy and loss plot.
+
+So the key takeaways are that with a Advanced Deep learning approach like BiLSTM we obtain a higher Macro-F1 score than machine learning models. The drawback is that BiLSTM takes a lot of time to train whereas Linear SVC is trained within a minute and provides decent results. 
+In order to improve the results further more BiLSTM stacked on top another to obtain a higher score. Also, in this experiment only 200 dimensional glove embedding was used. Results for 300d can be explored as well as other approaches using Transformers, BERT and BioBert are some other advanced techniques to look at.
+
+# Steps to run code:
+
+The code is in a Ipython notebook format.
+Dataset is provided.
 
 
 
