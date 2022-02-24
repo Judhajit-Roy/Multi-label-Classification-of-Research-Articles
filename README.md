@@ -2,7 +2,7 @@
 Multi-label classification of Research Articles using several machine learning and deep learning methods. Dataset consists of titles and abstracts of articles from various domain. The task is to predict the domains of these articles.
 
 # Hypothesis
-Given a dataset for multi-label classification with large spans of sequential text, an advanced deep neural network performs than machine learning techniques.
+Given a dataset for multi-label classification with large spans of sequential text, an advanced deep neural network performs better than machine learning techniques.
 
 Reason being, in large spans of text it is important that the model understands the data sequentially. In machine learning techniques, the sequence in which the text exists is overlooked while training the model. Whereas, in advanced deep learning techniques like BiLSTM, the network learns the data sequentially thus it understands the input better and gives better results.
 
